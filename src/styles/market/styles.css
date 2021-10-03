@@ -1,0 +1,7 @@
+.products-container {
+    @apply xl:grid grid-cols-5 flex xl:overflow-visible overflow-x-scroll overflow-y-hidden gap-4;
+}
+
+.shop-heading {
+    @apply font-semibold text-base mb-4 capitalize;
+}

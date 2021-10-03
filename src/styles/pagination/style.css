@@ -1,0 +1,35 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+.pagination li.pagination__link--active a {
+    background: crimson;
+    color: white;
+}
+
+.pagination a:hover {
+    border: 1px solid crimson;
+}
+
+.pagination__link--disabled {
+    color: gray;
+    cursor: not-allowed;
+    border: none !important;
+}
+
+li.pagination__link--disabled a:hover {
+    border: none !important;
+}

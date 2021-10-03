@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name":"Karim Khan",
+        "image": "https://images.pexels.com/photos/3147528/pexels-photo-3147528.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+    },
+    {
+        "id": 2,
+        "name": "Rahim Khan",
+        "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+    },
+    {
+        "id": 3,
+        "name": "Salman Khan",
+        "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+    }
+]

@@ -1,0 +1,41 @@
+[{
+    "id":1,
+    "Excellent":75,
+    "Good":40,
+    "Average":20,
+    "Below_Average":30,
+    "Poor":40
+},
+{
+    "id":2,
+    "Excellent":70,
+    "Good":50,
+    "Average":50,
+    "Below_Average":30,
+    "Poor":50
+},
+{
+    "id":3,
+    "Excellent":60,
+    "Good":70,
+    "Average":80,
+    "Below_Average":10,
+    "Poor":50
+},
+{
+    "id":4,
+    "Excellent":90,
+    "Good":30,
+    "Average":70,
+    "Below_Average":80,
+    "Poor":70
+},
+{
+    "id":5,
+    "Excellent":40,
+    "Good":80,
+    "Average":50,
+    "Below_Average":40,
+    "Poor":10
+}
+]

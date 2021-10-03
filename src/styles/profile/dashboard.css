@@ -1,0 +1,17 @@
+.gradient_1 {
+    background: #dd5e89;
+    background: -webkit-linear-gradient(to right, #f7bb97, #dd5e89);
+    background: linear-gradient(to right, #f7bb97, #dd5e89);
+}
+
+.gradient_2 {
+    background: #1fa2ff;
+    background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+    background: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+}
+
+.gradient_3 {
+    background: #e55d87;
+    background: -webkit-linear-gradient(to right, #5fc3e4, #e55d87);
+    background: linear-gradient(to right, #5fc3e4, #e55d87);
+}

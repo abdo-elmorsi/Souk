@@ -1,0 +1,25 @@
+.product-btn {
+    background-image: linear-gradient(
+        to right,
+        #ef233c 0%,
+        #fa8895 51%,
+        #ef233c 100%
+    );
+}
+
+.product-btn {
+    transition: 0.3s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+}
+
+.product-btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.product-card:hover .wish-card {
+    transform: translateY(0);
+}

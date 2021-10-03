@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Shirt",
+        "feature":"This is nice shirt",
+        "specifation":"This shirt has good specifation",
+        "price":"129.00",
+        "image":"https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+    },
+    {
+        "id": 2,
+        "name": "Shoe",
+        "feature": "This is nice Shoe",
+        "specifation": "This shoe has good specifation",
+        "price": "229.00",
+        "image": "https://images.pexels.com/photos/2529147/pexels-photo-2529147.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+    },
+    {
+        "id": 3,
+        "name": "Bag",
+        "feature": "This is nice Bag",
+        "specifation": "This bag has good specifation",
+        "price": "559.00",
+        "image": "https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+    }
+]

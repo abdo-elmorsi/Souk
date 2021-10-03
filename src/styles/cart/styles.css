@@ -1,0 +1,31 @@
+.cart-heading {
+    @apply font-semibold text-xl mb-10;
+}
+
+.cart-table {
+    @apply sm:grid justify-items-center sm:grid-cols-6  hidden;
+}
+
+.table-title {
+    @apply font-bold uppercase text-base;
+}
+
+.line {
+    @apply h-0.5 mt-4 mb-6 w-full bg-gray-100;
+}
+
+.total-amount {
+    @apply font-semibold text-right text-2xl mb-2;
+}
+
+.btns-container {
+    @apply flex sm:flex-row flex-col sm:space-x-4 sm:space-y-0 space-y-4;
+}
+
+.cart-btn {
+    @apply px-8 py-2 lg:mx-4 capitalize rounded-sm border text-lg border-primary font-bold text-primary;
+}
+
+.cart-btn-outline {
+    @apply px-8 py-2 capitalize rounded-sm text-lg  border border-primary bg-primary font-bold text-white;
+}

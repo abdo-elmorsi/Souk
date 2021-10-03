@@ -1,0 +1,47 @@
+.banner-container {
+    @apply lg:grid lg:grid-cols-5 lg:gap-5 overflow-hidden;
+}
+
+.category-container {
+    @apply lg:block hidden self-stretch;
+}
+
+.category-navlist {
+    @apply border h-full  shadow border-gray-200 py-6 flex justify-center bg-gray-50;
+}
+
+.main-banner {
+    @apply col-span-4 lg:gap-4 gap-y-4 grid lg:grid-cols-4  grid-cols-2 lg:grid-rows-5;
+}
+
+.banner-carousel {
+    @apply lg:col-span-3 lg:h-auto  col-span-2 w-full  bg-gray-100 bg-cover md:bg-center flex  lg:row-span-4 rounded-md;
+}
+
+.banner-img {
+    @apply w-full h-full;
+}
+
+.banner-ad-01 {
+    @apply lg:h-full p-2 hover:p-1 cursor-pointer overflow-hidden  lg:block hidden lg:row-span-2 w-full bg-gray-200 rounded-md;
+}
+
+.banner-ad-02 {
+    @apply lg:h-full p-2 hover:p-1 cursor-pointer overflow-hidden lg:block hidden lg:row-span-3 bg-gray-200 rounded-md;
+}
+
+.product-list-container-01 {
+    @apply grid lg:grid-cols-5 sm:grid-cols-2 grid-cols-1 lg:gap-4 gap-6;
+}
+
+.product-list-container-02 {
+    @apply grid sm:grid-cols-2 grid-cols-1 gap-x-6 lg:grid-cols-5 gap-y-8 lg:gap-x-4;
+}
+
+.product-list-container-03 {
+    @apply grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-x-4;
+}
+
+.sub-btns-container {
+    @apply grid col-span-3 lg:grid-cols-4 grid-cols-2 gap-4 items-end;
+}

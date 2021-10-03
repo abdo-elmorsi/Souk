@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+::selection {
+    background: transparent;
+}
+
+/* CLOUDS */
+body:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-radius: 100%;
+    background: transparent;
+    display: block;
+}
+
+/* JUMP */
+h1 {
+    cursor: default;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    /* height: 100px; */
+    margin: auto;
+    display: block;
+    /* text-align: center; */
+}
+
+h1 span {
+    position: relative;
+    /* top: 40px; */
+    display: inline-block;
+    -webkit-animation: bounce 0.5s ease infinite alternate;
+    /* font-size: 80px; */
+    color: #000;
+    text-shadow: 0 1px 0 #dcdcdc, 0 2px 0 #dcdcdc, 0 3px 0 #dcdcdc,
+        0 4px 0 #dcdcdc, 0 5px 0 #dcdcdc, 0 6px 0 transparent,
+        0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent,
+        0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+h1 span:nth-child(2) {
+    -webkit-animation-delay: 0.1s;
+}
+
+h1 span:nth-child(3) {
+    -webkit-animation-delay: 0.2s;
+}
+
+h1 span:nth-child(4) {
+    -webkit-animation-delay: 0.3s;
+}
+
+h1 span:nth-child(5) {
+    -webkit-animation-delay: 0.4s;
+}
+
+h1 span:nth-child(6) {
+    -webkit-animation-delay: 0.5s;
+}
+
+h1 span:nth-child(7) {
+    -webkit-animation-delay: 0.6s;
+}
+
+h1 span:nth-child(8) {
+    -webkit-animation-delay: 0.2s;
+}
+
+h1 span:nth-child(9) {
+    -webkit-animation-delay: 0.3s;
+}
+
+h1 span:nth-child(10) {
+    -webkit-animation-delay: 0.4s;
+}
+
+h1 span:nth-child(11) {
+    -webkit-animation-delay: 0.5s;
+}
+
+h1 span:nth-child(12) {
+    -webkit-animation-delay: 0.6s;
+}
+
+h1 span:nth-child(13) {
+    -webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(14) {
+    -webkit-animation-delay: 0.8s;
+}
+
+h1 span:nth-child(15) {
+    -webkit-animation-delay: 0.3s;
+}
+
+h1 span:nth-child(16) {
+    -webkit-animation-delay: 0.4s;
+}
+
+h1 span:nth-child(17) {
+    -webkit-animation-delay: 0.5s;
+}
+
+h1 span:nth-child(18) {
+    -webkit-animation-delay: 0.6s;
+}
+
+h1 span:nth-child(19) {
+    -webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(20) {
+    -webkit-animation-delay: 0.8s;
+}
+
+h1 span:nth-child(21) {
+    -webkit-animation-delay: 0.9s;
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+            0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+            0 50px 25px rgba(0, 0, 0, 0.2);
+    }
+}

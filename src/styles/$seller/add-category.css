@@ -1,0 +1,35 @@
+.seller-container {
+    @apply rounded-md shadow-md mt-8 bg-white md:p-4 p-2;
+}
+
+.seller-heading {
+    @apply font-semibold mb-4 pb-4 border-b-2 border-gray-200;
+}
+
+.seller-form-grid {
+    @apply grid items-center sm:grid-cols-6 mb-6;
+}
+
+.seller-label {
+    @apply col-span-2 justify-self-start;
+}
+
+.label-text {
+    @apply block text-gray-500 font-bold  mb-1 md:mb-0 pr-4;
+}
+
+.seller-input {
+    @apply bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500;
+}
+
+.seller-select {
+    @apply block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500;
+}
+
+.select-icon {
+    @apply pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700;
+}
+
+.add-btn {
+    @apply bg-gray-500 text-white hover:bg-purple-500 px-8 py-2 rounded;
+}

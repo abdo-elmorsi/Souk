@@ -1,0 +1,15 @@
+.btn-primary {
+    @apply hover:text-secondary pb-4 border-b-2 border-gray-100 text-lg text-primary underline font-semibold mb-6;
+}
+
+.heading {
+    @apply text-xl capitalize font-semibold mb-2;
+}
+
+.checkout-grid {
+    @apply grid w-full xl:grid-cols-2 grid-cols-1 gap-4;
+}
+
+.checkout-container {
+    @apply bg-gray-100 rounded-md xl:p-10 p-4;
+}

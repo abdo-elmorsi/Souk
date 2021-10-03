@@ -1,0 +1,13 @@
+/* CHECKBOX TOGGLE SWITCH */
+/* @apply rules for documentation, these do not work as inline style */
+.toggle-checkbox_1:checked,
+.toggle-checkbox_2:checked,
+.toggle-checkbox_3:checked {
+    right: 0;
+    border-color: #68d391;
+}
+.toggle-checkbox_1:checked + .toggle-label-1,
+.toggle-checkbox_2:checked + .toggle-label-2,
+.toggle-checkbox_3:checked + .toggle-label-3 {
+    background-color: #68d391;
+}

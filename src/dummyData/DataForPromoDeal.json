@@ -1,0 +1,46 @@
+[{
+    "id":1,
+    "name":"Name-111",
+    "normalPrice":"$ 454",
+    "discount":"15 %",
+    "promoPrice":"400",
+    "promoPriod":"From 14/06/2021 to 20/06/2021",
+    "shop" : "Clothing Buy"
+},
+{
+    "id":2,
+    "name":"Name-222",
+    "normalPrice":"$ 656",
+    "discount":"18 %",
+    "promoPrice":"500",
+    "promoPriod":"From 22/06/2021 to 5/07/2021",
+    "shop" : "Electronics Buy"
+},
+{
+    "id":3,
+    "name":"Name-333",
+    "normalPrice":"$ 877",
+    "discount":"44 %",
+    "promoPrice":"777",
+    "promoPriod":"From 18/06/2021 to 29/06/2021",
+    "shop" : "Fashion Buy"
+},
+{
+    "id":4,
+    "name":"Name-444",
+    "normalPrice":"$ 994",
+    "discount":"66 %",
+    "promoPrice":"854",
+    "promoPriod":"From 16/06/2021 to 28/06/2021",
+    "shop" : "Electronics Buy"
+},
+{
+    "id":5,
+    "name":"Name-555",
+    "normalPrice":"$ 6534",
+    "discount":"40 %",
+    "promoPrice":"4554",
+    "promoPriod":"From 04/06/2021 to 24/06/2021",
+    "shop" : "Clothing Buy"
+}
+]

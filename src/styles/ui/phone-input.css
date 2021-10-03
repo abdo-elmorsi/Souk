@@ -1,0 +1,11 @@
+.PhoneInputInput {
+    @apply appearance-none border-2 border-gray-200  rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none bg-white focus:border-secondary;
+    height: 50px;
+}
+
+.PhoneInputCountry {
+    background: #eee;
+    margin: 0 !important;
+    height: 50px !important;
+    padding: 5px;
+}

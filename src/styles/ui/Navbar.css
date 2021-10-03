@@ -1,0 +1,7 @@
+.search-input::placeholder {
+    color: rgb(26, 25, 25);
+}
+
+.search-input {
+    width: 450px;
+}

@@ -1,0 +1,27 @@
+@media (min-width: 1025px) {
+    .orders-table {
+        display: inline-table !important;
+    }
+
+    .orders-table thead tr:not(:first-child) {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .small-table {
+        display: inline-table !important;
+    }
+
+    .small-table thead tr:not(:first-child) {
+        display: none;
+    }
+}
+
+td:not(:last-child) {
+    border-bottom: 0;
+}
+
+th {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,41 @@
+form:hover input ~ span {
+    background-color: #ccc;
+}
+form input:checked ~ span {
+    background-color: #2196f3;
+}
+form span:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+form input:checked ~ span:after {
+    display: block;
+}
+form span:after {
+    left: 50%;
+    top: 50%;
+    margin-left: -4px;
+    margin-top: -6px;
+    width: 8px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.setting::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: 50%;
+    transform: translatex(50%);
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: gray transparent transparent;
+}

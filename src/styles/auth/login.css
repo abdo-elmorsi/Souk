@@ -1,0 +1,23 @@
+.login-heading {
+    @apply text-2xl font-bold text-primary capitalize text-center mb-10;
+}
+
+.login-input {
+    @apply w-full py-2  focus:outline-none border-b-2 border-gray-100 font-semibold px-2;
+}
+
+.err-msg {
+    @apply text-red-500 inline-block mt-1;
+}
+
+.login-btn {
+    @apply bg-primary hover:opacity-70 relative px-2 mb-4 uppercase text-white lg:text-lg text-base py-3 rounded w-full;
+}
+
+.login-icon {
+    @apply text-xl absolute left-4 top-1/2 transform -translate-y-1/2 text-white;
+}
+
+.login-text {
+    @apply text-lg font-light text-base lg:mb-0 mb-6;
+}

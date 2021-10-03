@@ -1,0 +1,41 @@
+.main-heading {
+    @apply text-primary capitalize text-4xl text-center font-bold mb-6;
+}
+
+.signup-container {
+    @apply max-w-screen-md bg-gray-50 p-8 rounded-md mx-auto px-2;
+}
+
+.signup-grid {
+    @apply grid grid-cols-2 gap-6 mb-10;
+}
+
+.signup-input {
+    @apply appearance-none border-2 border-gray-200  rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none bg-white ;
+    height: 50px;
+}
+
+.err-msg {
+    @apply text-red-500 inline-block mt-1 select-none;
+    user-select:none;
+}
+
+.submit-btn {
+    @apply bg-primary font-bold  rounded-sm py-2 px-10 text-white mb-4;
+}
+
+.login-link {
+    @apply text-primary hover:text-secondary mx-2 font-bold;
+}
+
+.PhoneInputInput {
+    @apply appearance-none border-2 border-gray-200  rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none bg-white focus:border-secondary;
+    height: 50px;
+}
+
+.PhoneInputCountry {
+    background: #eee;
+    margin: 0 !important;
+    height: 50px !important;
+    padding: 5px;
+}
