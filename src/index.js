@@ -1,7 +1,6 @@
 import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
 import reportWebVitals from './reportWebVitals'
 // Font
 import '@fontsource/open-sans/300.css'
@@ -42,7 +41,8 @@ i18next
             loadPath: '/assets/locales/{{lng}}/translation.json',
         },
     })
-
+// import App from './App'
+const App = React.lazy(() => import('./App'))
 ReactDOM.render(
     <Suspense fallback={<Loader />}>
         <Provider store={store}>

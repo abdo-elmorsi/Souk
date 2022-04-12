@@ -2,94 +2,97 @@ import { createBrowserHistory } from 'history'
 import React from 'react'
 import { Router, Switch } from 'react-router'
 import * as ROUTES from '../constants/routes'
-import Dashboard from '../pages/admin/Dashboard'
-import AddNewProduct from '../pages/admin/Product/AddNewProduct'
-import Seller from '../pages/admin/Sellers'
-import AddNewSeller from '../pages/admin/Sellers/AddNewSeller'
-import SellerPayout from '../pages/admin/Sellers/SellerPayout'
-import FlashDeal from '../pages/admin/Marketing/FlashDeal'
-import PromoDeal from '../pages/admin/Marketing/PromoDeal'
-import CreateFlashDeal from '../pages/admin/Marketing/CreateFlashDeal'
-import ReportProductSale from '../pages/admin/Report/ProductSale'
-import ReportProductStock from '../pages/admin/Report/ProductStock'
-import ReportSellerProductSale from '../pages/admin/Report/SellerProductSale'
-import ReportShipment from '../pages/admin/Report/Shipment'
-import AllProducts from '../pages/admin/Product/AllProducts'
-import ProductRate from '../pages/admin/Product/ProductRate'
-import ProductRateDetails from '../pages/admin/Product/ProductRateDetails'
-import Category from '../pages/admin/Product/Category'
-import AddNewCategory from '../pages/admin/Product/AddNewCategory'
-import ShopAdmin from '../pages/admin/Product/BrandShop'
-import Login from '../pages/auth/login'
-import SubCategoryFilter from '../pages/filter/SubCategoryFilter'
-import Cart from '../pages/cart'
-import Checkout from '../pages/checkout'
-import Home from '../pages/home'
-import Market from '../pages/market'
-import Shop from '../pages/shop'
-import Wishlist from '../pages/wishlist'
-import About from '../pages/About'
-import Contact from '../pages/contact'
-import AdminRoute from './AdminRoute'
-import PrivateRoute from './PrivateRoute'
-import PublicRoute from './PublicRoute'
-import ProductDetails from '../pages/product-details'
-import SignUp from '../pages/auth/signup'
-import CashPayment from '../pages/checkout/step_2/CashPayment'
-import PaypalPayment from '../pages/checkout/step_2/PaypalPayment'
-import UploadingFiles from '../pages/admin/UploadingFiles'
-import CustomerDashboard from '../pages/profile/dashboard'
-import ManageProfile from '../pages/profile/manage-profile'
-import UpdateEmail from '../pages/profile/manage-profile/UpdateEmail'
-import UpdatePassword from '../pages/profile/manage-profile/UpdatePassword'
-import UpdateInfo from '../pages/profile/manage-profile/UpdateInfo'
-import ProfileVerifyEmail from '../pages/profile/manage-profile/ProfileVerifyEmail'
-import UpdateAvatar from '../pages/profile/manage-profile/UpdateAvatar'
-import ProfileVerifyPhone from '../pages/profile/manage-profile/ProfileVerifyPhone'
-import UpdatePhone from '../pages/profile/manage-profile/UpdatePhone'
-import PaymentMethod from '../pages/profile/payment-method'
-import AddNewPaymentMethod from '../pages/profile/payment-method/AddNewMethod'
-import SellerRoute from './SellerRoute'
-import SellerDashboard from '../pages/seller/dashboard'
-import ShopVerification from '../pages/seller/shop-verification'
-import PurchaseHistory from '../pages/seller/purchace-history'
-import SellerWishlist from '../pages/seller/wishlist'
-import AddsManager from '../pages/admin/AddsManager'
-import SellerChat from '../pages/seller/conversation'
-import Customer from '../pages/admin/Customers'
-import Orders from '../pages/admin/Customers/Orders'
-import AdminProductWishlist from '../pages/admin/Report/ProductWishlist'
-import Sales from '../pages/admin/Sales'
-import OrdersHistory from '../pages/profile/orders-history'
-import BeSeller from '../pages/profile/be-seller'
-import CustomersOrders from '../pages/seller/customers/CustomerOrders'
-import AllCustomers from '../pages/seller/customers/AllCustomers'
-import ProductSale from '../pages/seller/reports/ProductSale'
-import SellerSale from '../pages/seller/reports/SellerSale'
-import StockReport from '../pages/seller/reports/StockReport'
-import ShipmentReport from '../pages/seller/reports/ShipmentReport'
-import SellerFlashDeal from '../pages/seller/flash-deal/SellerFlashDeal'
-import SellerCreateFlashDeal from '../pages/seller/flash-deal/CreateFlashDeal'
-import SellerPromoDeal from '../pages/seller/flash-deal/SellerPromoDeal'
-import SellerAddProducts from '../pages/seller/products/SellerAddProducts'
-import SellerAllProducts from '../pages/seller/products/SellerAllProducts'
-import ReviewsPage from '../pages/reviews'
-import AddReview from '../pages/profile/add-review'
-import EditProduct from '../pages/seller/products/EditProduct'
-import SellerAllCategories from '../pages/seller/products/SellerAllCategories'
-import SellerBrands from '../pages/seller/products/SellerBrands'
+
+import  AdminRoute from './AdminRoute'
+import  PrivateRoute from './PrivateRoute'
+import  PublicRoute from './PublicRoute'
+import  SellerRoute from './SellerRoute'
+
+const  Dashboard =  React.lazy(() => import('../pages/admin/Dashboard'))
+const  AddNewProduct =  React.lazy(() => import('../pages/admin/Product/AddNewProduct'))
+const  Seller =  React.lazy(() => import('../pages/admin/Sellers'))
+const  AddNewSeller =  React.lazy(() => import('../pages/admin/Sellers/AddNewSeller'))
+const  SellerPayout =  React.lazy(() => import('../pages/admin/Sellers/SellerPayout'))
+const  FlashDeal =  React.lazy(() => import('../pages/admin/Marketing/FlashDeal'))
+const  PromoDeal =  React.lazy(() => import('../pages/admin/Marketing/PromoDeal'))
+const  CreateFlashDeal =  React.lazy(() => import('../pages/admin/Marketing/CreateFlashDeal'))
+const  ReportProductSale =  React.lazy(() => import('../pages/admin/Report/ProductSale'))
+const  ReportProductStock =  React.lazy(() => import('../pages/admin/Report/ProductStock'))
+const  ReportSellerProductSale =  React.lazy(() => import('../pages/admin/Report/SellerProductSale'))
+const  ReportShipment =  React.lazy(() => import('../pages/admin/Report/Shipment'))
+const  AllProducts =  React.lazy(() => import('../pages/admin/Product/AllProducts'))
+const  ProductRate =  React.lazy(() => import('../pages/admin/Product/ProductRate'))
+const  ProductRateDetails =  React.lazy(() => import('../pages/admin/Product/ProductRateDetails'))
+const  Category =  React.lazy(() => import('../pages/admin/Product/Category'))
+const  AddNewCategory =  React.lazy(() => import('../pages/admin/Product/AddNewCategory'))
+const  ShopAdmin =  React.lazy(() => import('../pages/admin/Product/BrandShop'))
+const  Login =  React.lazy(() => import('../pages/auth/login'))
+const  SubCategoryFilter =  React.lazy(() => import('../pages/filter/SubCategoryFilter'))
+const  Cart =  React.lazy(() => import('../pages/cart'))
+const  Checkout =  React.lazy(() => import('../pages/checkout'))
+const  Home =  React.lazy(() => import('../pages/home'))
+const  Market =  React.lazy(() => import('../pages/market'))
+const  Shop =  React.lazy(() => import('../pages/shop'))
+const  Wishlist =  React.lazy(() => import('../pages/wishlist'))
+const  About =  React.lazy(() => import('../pages/About'))
+const  Contact =  React.lazy(() => import('../pages/contact'))
+
+const  ProductDetails =  React.lazy(() => import('../pages/product-details'))
+const  SignUp =  React.lazy(() => import('../pages/auth/signup'))
+const  CashPayment =  React.lazy(() => import('../pages/checkout/step_2/CashPayment'))
+const  PaypalPayment =  React.lazy(() => import('../pages/checkout/step_2/PaypalPayment'))
+const  UploadingFiles =  React.lazy(() => import('../pages/admin/UploadingFiles'))
+const  CustomerDashboard =  React.lazy(() => import('../pages/profile/dashboard'))
+const  ManageProfile =  React.lazy(() => import('../pages/profile/manage-profile'))
+const  UpdateEmail =  React.lazy(() => import('../pages/profile/manage-profile/UpdateEmail'))
+const  UpdatePassword =  React.lazy(() => import('../pages/profile/manage-profile/UpdatePassword'))
+const  UpdateInfo =  React.lazy(() => import('../pages/profile/manage-profile/UpdateInfo'))
+const  ProfileVerifyEmail =  React.lazy(() => import('../pages/profile/manage-profile/ProfileVerifyEmail'))
+const  UpdateAvatar =  React.lazy(() => import('../pages/profile/manage-profile/UpdateAvatar'))
+const  ProfileVerifyPhone =  React.lazy(() => import('../pages/profile/manage-profile/ProfileVerifyPhone'))
+const  UpdatePhone =  React.lazy(() => import('../pages/profile/manage-profile/UpdatePhone'))
+const  PaymentMethod =  React.lazy(() => import('../pages/profile/payment-method'))
+const  AddNewPaymentMethod =  React.lazy(() => import('../pages/profile/payment-method/AddNewMethod'))
+const  SellerDashboard =  React.lazy(() => import('../pages/seller/dashboard'))
+const  ShopVerification =  React.lazy(() => import('../pages/seller/shop-verification'))
+const  PurchaseHistory =  React.lazy(() => import('../pages/seller/purchace-history'))
+const  SellerWishlist =  React.lazy(() => import('../pages/seller/wishlist'))
+const  AddsManager =  React.lazy(() => import('../pages/admin/AddsManager'))
+const  SellerChat =  React.lazy(() => import('../pages/seller/conversation'))
+const  Customer =  React.lazy(() => import('../pages/admin/Customers'))
+const  Orders =  React.lazy(() => import('../pages/admin/Customers/Orders'))
+const  AdminProductWishlist =  React.lazy(() => import('../pages/admin/Report/ProductWishlist'))
+const  Sales =  React.lazy(() => import('../pages/admin/Sales'))
+const  OrdersHistory =  React.lazy(() => import('../pages/profile/orders-history'))
+const  BeSeller =  React.lazy(() => import('../pages/profile/be-seller'))
+const  CustomersOrders =  React.lazy(() => import('../pages/seller/customers/CustomerOrders'))
+const  AllCustomers =  React.lazy(() => import('../pages/seller/customers/AllCustomers'))
+const  ProductSale =  React.lazy(() => import('../pages/seller/reports/ProductSale'))
+const  SellerSale =  React.lazy(() => import('../pages/seller/reports/SellerSale'))
+const  StockReport =  React.lazy(() => import('../pages/seller/reports/StockReport'))
+const  ShipmentReport =  React.lazy(() => import('../pages/seller/reports/ShipmentReport'))
+const  SellerFlashDeal =  React.lazy(() => import('../pages/seller/flash-deal/SellerFlashDeal'))
+const  SellerCreateFlashDeal =  React.lazy(() => import('../pages/seller/flash-deal/CreateFlashDeal'))
+const  SellerPromoDeal =  React.lazy(() => import('../pages/seller/flash-deal/SellerPromoDeal'))
+const  SellerAddProducts =  React.lazy(() => import('../pages/seller/products/SellerAddProducts'))
+const  SellerAllProducts =  React.lazy(() => import('../pages/seller/products/SellerAllProducts'))
+const  ReviewsPage =  React.lazy(() => import('../pages/reviews'))
+const  AddReview =  React.lazy(() => import('../pages/profile/add-review'))
+const  EditProduct =  React.lazy(() => import('../pages/seller/products/EditProduct'))
+const  SellerAllCategories =  React.lazy(() => import('../pages/seller/products/SellerAllCategories'))
+const  SellerBrands =  React.lazy(() => import('../pages/seller/products/SellerBrands'))
 //  import AddCoupon from '../pages/seller/products/SellerAddCoupon'
-import SellerAddCategory from '../pages/seller/products/SellerAddCategory'
-import SellerSubCategory from '../pages/seller/products/SellerSubCategory'
-import SellerAddSubCategory from '../pages/seller/products/SellerAddSubCategory'
-import SellerAllReviews from '../pages/seller/products/SellerAllReviews'
-import VerifyEmail from '../Components/auth/VerifyEmail'
-import ForgotPassword from '../pages/auth/forgot-password'
-import PageNotFound from '../pages/PageNotFound'
-import AdminEditProduct from '../pages/admin/Product/EditProduct'
-import AllUsers from '../pages/admin/Customers/Users'
-import AllCoupons from '../pages/admin/Product/Coupons/AllCoupons'
-import AddNewCoupon from '../pages/admin/Product/Coupons/AddNewCoupon'
+const  SellerAddCategory =  React.lazy(() => import('../pages/seller/products/SellerAddCategory'))
+const  SellerSubCategory =  React.lazy(() => import('../pages/seller/products/SellerSubCategory'))
+const  SellerAddSubCategory =  React.lazy(() => import('../pages/seller/products/SellerAddSubCategory'))
+const  SellerAllReviews =  React.lazy(() => import('../pages/seller/products/SellerAllReviews'))
+const  VerifyEmail =  React.lazy(() => import('../Components/auth/VerifyEmail'))
+const  ForgotPassword =  React.lazy(() => import('../pages/auth/forgot-password'))
+const  PageNotFound =  React.lazy(() => import('../pages/PageNotFound'))
+const  AdminEditProduct =  React.lazy(() => import('../pages/admin/Product/EditProduct'))
+const  AllUsers =  React.lazy(() => import('../pages/admin/Customers/Users'))
+const  AllCoupons =  React.lazy(() => import('../pages/admin/Product/Coupons/AllCoupons'))
+const  AddNewCoupon =  React.lazy(() => import('../pages/admin/Product/Coupons/AddNewCoupon'))
 
 export const history = createBrowserHistory()
 
